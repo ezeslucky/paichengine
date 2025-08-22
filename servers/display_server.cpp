@@ -2,11 +2,11 @@
 /*  display_server.cpp                                                    */
 /**************************************************************************/
 /*                         This file is part of:                          */
-/*                             GODOT ENGINE                               */
-/*                        https://godotengine.org                         */
+/*                             PAICH ENGINE                               */
+/*                                                                        */
 /**************************************************************************/
-/* Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md). */
-/* Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.                  */
+/* Copyright (c) 2025-present Paich Engine contributors (see AUTHORS.md). */
+/*                                                                        */
 /*                                                                        */
 /* Permission is hereby granted, free of charge, to any person obtaining  */
 /* a copy of this software and associated documentation files (the        */
@@ -2003,10 +2003,10 @@ bool DisplayServer::is_rendering_device_supported() {
 #endif
 #ifdef METAL_ENABLED
 	if (rcd == nullptr) {
-		GODOT_CLANG_WARNING_PUSH_AND_IGNORE("-Wunguarded-availability")
+		Paich_CLANG_WARNING_PUSH_AND_IGNORE("-Wunguarded-availability")
 		// Eliminate "RenderingContextDriverMetal is only available on iOS 14.0 or newer".
 		rcd = memnew(RenderingContextDriverMetal);
-		GODOT_CLANG_WARNING_POP
+		Paich_CLANG_WARNING_POP
 	}
 #endif
 
@@ -2085,10 +2085,10 @@ bool DisplayServer::can_create_rendering_device() {
 #endif
 #ifdef METAL_ENABLED
 	if (rcd == nullptr) {
-		GODOT_CLANG_WARNING_PUSH_AND_IGNORE("-Wunguarded-availability")
+		Paich_CLANG_WARNING_PUSH_AND_IGNORE("-Wunguarded-availability")
 		// Eliminate "RenderingContextDriverMetal is only available on iOS 14.0 or newer".
 		rcd = memnew(RenderingContextDriverMetal);
-		GODOT_CLANG_WARNING_POP
+		Paich_CLANG_WARNING_POP
 	}
 #endif
 
