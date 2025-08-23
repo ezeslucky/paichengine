@@ -1,0 +1,9 @@
+short_name = "patch"
+name = "Patch Engine"
+major = 4
+minor = 5
+patch = 0
+status = "beta"
+module_config = ""
+website = ""
+docs = "latest"
